@@ -2907,7 +2907,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/paulbrighton/Sites/yp-digital-framework-components/wp-content/themes/yp-digital-fw/src/assets/js/main.js */"./src/assets/js/main.js");
+module.exports = __webpack_require__(/*! /Users/paulbrighton/Sites/yp-digital-framework-3.1/wp-content/themes/yp-digital-fw/src/assets/js/main.js */"./src/assets/js/main.js");
 
 
 /***/ }),

@@ -159,7 +159,7 @@ var stripTags = function stripTags(input, allowed) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/paulbrighton/Sites/yp-digital-framework-components/wp-content/themes/yp-digital-fw/src/assets/js/customize-preview.js */"./src/assets/js/customize-preview.js");
+module.exports = __webpack_require__(/*! /Users/paulbrighton/Sites/yp-digital-framework-3.1/wp-content/themes/yp-digital-fw/src/assets/js/customize-preview.js */"./src/assets/js/customize-preview.js");
 
 
 /***/ }),
