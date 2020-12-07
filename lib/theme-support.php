@@ -26,6 +26,7 @@ function _themename_theme_support()
   add_image_size('_themename-blog-image', 1200, 0);
   add_theme_support('custom-header');
   add_theme_support( 'custom-background' );
+  add_theme_support( 'responsive-embeds' );
 }
 
 add_action('after_setup_theme', '_themename_theme_support');
