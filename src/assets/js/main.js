@@ -2,7 +2,8 @@ import $ from 'jquery'
 import './components/navigation/hamburger-nav'
 import './components/navigation/navigation'
 import 'slick-carousel'
-import './components/_aos'
+import './components/aos'
+import './components/accordion'
 // import webpackStream from 'webpack-stream'
 
 $(document).ready(() => {
