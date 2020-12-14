@@ -46,6 +46,9 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 // Footer Components
 @import './components/footer';
 
+// General Page Layouts
+@import './page/page-layouts';
+
 // Front Page Components
 @import './components/front-page/front-page';
 @import './components/front-page/hero';
@@ -71,3 +74,6 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 // hero
 @import './hero/hero-nav-overlay';
 @import './hero/hero-text-overlay';
+
+// Slider
+@import './components/slider';

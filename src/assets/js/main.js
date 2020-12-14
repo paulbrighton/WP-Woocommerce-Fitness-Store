@@ -4,6 +4,7 @@ import './components/navigation/navigation'
 import 'slick-carousel'
 import './components/aos'
 import './components/accordion'
+import './components/slider'
 // import webpackStream from 'webpack-stream'
 
 $(document).ready(() => {
