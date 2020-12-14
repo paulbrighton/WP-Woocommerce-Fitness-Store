@@ -120,9 +120,17 @@
 
 <div class="c-contact-form">
   <div class="o-container">
-    <h1>Contact Form 1</h1>
-    <p class="c-contact-form-subtitle">Three column for name, email and subject.</p>
-    <?php echo do_shortcode('[contact-form-7 id="7" title="Contact form 1"]') ?>
+    <div class="o-row">
+      <div class="contact__header">
+        <h1>Contact Form 1</h1>
+        <p class="c-contact-form-subtitle">Three column for name, email and subject.</p>
+      </div>
+    </div>
+    <div class="o-row">
+      <div class="o-row__col o-row__col--span-12">
+        <?php echo do_shortcode('[contact-form-7 id="7" title="Contact form 1"]') ?>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -241,7 +249,9 @@
 </div>
 
 <div class="o-container u-margin-top-50 u-margin-bottom-50">
-  <h1>Animate on Scroll with AOS</h1>
+  <div class="o-row">
+    <h1>Animate on Scroll with AOS</h1>
+  </div>
   <div class="o-row c-animate">
     <div data-aos="fade-right" class="c-animate__text o-row__col o-row__col--span-12 u-flex u-flex-direction-column u-justify-center u-align-middle o-row__col--span-6@medium">
       <h2><?php the_field('animation_title') ?></h2>
