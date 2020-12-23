@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/paulbrighton/Sites/yp-digital-framework-3.1/wp-content/themes/yp-digital-fw/src/assets/js/admin.js */"./src/assets/js/admin.js");
+module.exports = __webpack_require__(/*! /Users/paulbrighton/Sites/woo-demo/wp-content/themes/yp-digital-fw/src/assets/js/admin.js */"./src/assets/js/admin.js");
 
 
 /***/ })

@@ -1,0 +1,10 @@
+.widget_yith_wc_category_accordion ul{
+    padding-left: 0 !important;
+}
+
+.widget_yith_wc_category_accordion ul.children li:before{
+    content: '' !important;
+    display: inline-block;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}

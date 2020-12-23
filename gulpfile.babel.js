@@ -75,7 +75,7 @@ export const serve = (done) => {
   server.init({
     // Change this url for browsersync and also in General Settings in WP Admin
     open: 'external',
-    proxy: 'http://192.168.1.19/yp-digital-framework-3.1/'
+    proxy: 'http://192.168.1.19/woo-demo/'
   })
   done()
 }
