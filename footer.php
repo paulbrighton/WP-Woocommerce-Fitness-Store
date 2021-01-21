@@ -1,7 +1,6 @@
 </main>
 
 <footer class="c-footer" id="footer" role="contentinfo">
-  <!-- <?php get_template_part('template-parts/footer/widgets') ?> -->
   <div class="c-footer__logo u-flex u-justify-center">
     <?php if (has_custom_logo()) {
       the_custom_logo();
