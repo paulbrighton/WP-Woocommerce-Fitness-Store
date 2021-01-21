@@ -1,7 +1,6 @@
 .c-header {
   padding: rem-calc(10) 0;
   color: $brand;
-  // height: 70px;
   align-items: center;
 
   &__main {
@@ -17,8 +16,9 @@
   }
   &__logo {
     font-size: rem-calc(20);
+    padding-bottom: 5px;
     img {
-      max-width: 100px;
+      max-width: 80px;
     }
   }
 }

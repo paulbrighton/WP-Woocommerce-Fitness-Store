@@ -1,12 +1,19 @@
 .c-header__nav {
-  color: $brand-darker;
+  color: $black;
 
   &--mobile {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     font-size: rem-calc(18);
     .sub-menu a {
       font-size: rem-calc(16);
+    }
+
+    .c-header__icon--mobile {
+      font-size: rem-calc(15);
+      margin-right: 15px;
+      color: $black;
     }
 
     .menu-primary-menu-container {
@@ -58,14 +65,14 @@
           > ul {
             left: auto;
             right: 0;
-            margin-top: 10px; /* Use same margin top as padding for header to make level with bottom of div */
+            padding-top: 10px; /* Use same padding top as padding for header to make level with bottom of div */
           }
         }
 
         li {
           display: block;
+          padding-top: 1px;
           border-bottom: 1px solid $brand-lighter;
-          background: $white;
 
           &.focus,
           &:hover {
@@ -79,8 +86,8 @@
 
       a {
         @include font-bold;
-        font-size: 1.125rem;
-        color: $brand;
+        font-size: 1rem;
+        color: $black;
         text-decoration: none;
         display: block;
         white-space: nowrap;
@@ -88,24 +95,25 @@
       }
 
       .sub-menu li {
-        background: $brand-darker;
         a {
-          color: $white;
+          color: $brand;
+          &:hover {
+            color: $black;
+          }
         }
       }
 
-      // Active & hover styles
       a:hover,
     li:hover > a,
-    .focus > a, // And color them as well
+    .focus > a,
     .current-menu-item > a,
     .current-menu-ancestor > a {
-        color: $brand-orange;
+        color: $brand;
       }
 
       // Submenu styles
       ul {
-        background-color: $white;
+        background-color: rgba(255, 255, 255, 0.9);
         display: block;
       }
 
@@ -161,24 +169,29 @@
 .c-header__icons {
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 959px) {
+    display: none;
+  }
 }
 
 .c-header__icon {
   margin-left: 15px;
+  color: $black;
   &:hover {
     cursor: pointer;
+    color: $brand;
   }
 }
 
 // Overlay for mobile menu
 .openbtn {
-  font-size: rem-calc(24);
+  font-size: rem-calc(18);
   cursor: pointer;
-  color: $brand-darker;
+  color: $black;
   position: relative;
 
   &:hover {
-    color: $medium-grey;
+    color: $brand;
   }
 }
 
@@ -207,7 +220,7 @@
   text-decoration: none;
   @include font-bold;
   font-size: rem-calc(26);
-  color: $brand-darker;
+  color: $black;
   display: block;
   transition: 0.3s;
   text-transform: capitalize;
@@ -215,7 +228,7 @@
 
 .overlay a:hover,
 .overlay a:focus {
-  color: $medium-grey;
+  color: $brand;
 }
 
 .overlay .closebtn {
