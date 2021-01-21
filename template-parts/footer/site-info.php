@@ -7,7 +7,7 @@ $built_by_info = get_theme_mod('_themename_built_by_info', '');
   <div class="c-site-info">
     <div class="o-container">
       <div class="o-row">
-        <div class="o-row__col o-row__col--span-6@small c-site-info__text">
+        <div class="o-row__col o-row__col--span-4@small c-site-info__text">
           <?php
           $allowed = array('a' => array(
             'href'    =>  array(),
@@ -16,7 +16,7 @@ $built_by_info = get_theme_mod('_themename_built_by_info', '');
           echo wp_kses($site_info, $allowed)
           ?>
         </div>
-        <div class="o-row__col o-row__col--span-6@small c-built-by-info__text">
+        <div class="o-row__col o-row__col--span-4@small c-built-by-info__text">
           <?php
           $allowed = array('a' => array(
             'href'    =>  array(),
@@ -24,6 +24,9 @@ $built_by_info = get_theme_mod('_themename_built_by_info', '');
           ));
           echo wp_kses($built_by_info, $allowed)
           ?>
+        </div>
+        <div class="o-row__col o-row__col--span-4@small c-footer__social">
+          social icons
         </div>
       </div>
     </div>

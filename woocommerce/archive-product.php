@@ -30,16 +30,20 @@ get_header('shop');
 ?>
 <div class="o-container">
 	<div class="o-row">
-		<?php if (is_active_sidebar('primary-sidebar')) { ?>
-      <div class="o-row__col o-row__col--span-3@small">
-        <?php get_sidebar() ?>
-      </div>
-    <?php } ?>
-		<div class="o-row__col o-row__col--span-9">
-			<?php
-			do_action('woocommerce_before_main_content');
-			?>
+		<div class="o-row__col o-row__col--span-12">
+			<?php do_action('woocommerce_before_main_content'); ?>
+		</div>
+	</div>
+</div>
 
+<div class="o-container">
+	<div class="o-row">
+		<?php if (is_active_sidebar('primary-sidebar')) { ?>
+			<div class="o-row__col o-row__col--span-12 o-row__col--span-3@small">
+				<?php get_sidebar() ?>
+			</div>
+		<?php } ?>
+		<div class="o-row__col o-row__col--span-12 o-row__col--span-9@small">
 			<header class="woocommerce-products-header">
 				<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 					<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>

@@ -1,26 +1,29 @@
-
 .c-header {
+  padding: rem-calc(10) 0;
+  color: $brand;
+  // height: 70px;
+  align-items: center;
 
-    padding: rem-calc(10) 0;
+  &__main {
+    background-color: $white;
+    border-bottom: 1px solid $brand-lighter;
+  }
+
+  &__blogname {
     color: $brand;
-    height: 70px;
-    align-items: center;
+    &:hover {
+      color: $brand-lighter;
+    }
+  }
+  &__logo {
+    font-size: rem-calc(20);
+    img {
+      max-width: 100px;
+    }
+  }
+}
 
-    &__main {
-        background-color: $white;
-        border-bottom: 1px solid $brand-lighter;
-    }
-
-    &__blogname {
-        color: $brand;
-        &:hover {
-            color: $brand-lighter;
-        }
-    }
-    &__logo {
-        font-size: rem-calc(20);
-        img {
-            max-width: 200px;
-        }
-    }
+.c-header-search-form {
+    display: none;
+    margin: 10px auto;
 }

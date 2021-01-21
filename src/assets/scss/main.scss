@@ -76,3 +76,17 @@ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
 // WooCommerce
 @import "./woocommerce/ywcca_style";
 @import "./woocommerce/woo-custom";
+
+.flex-viewport {
+  margin-bottom: 1rem;
+}
+
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+  opacity: 1;
+  padding-right: 5px;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  margin-top: 5px;
+}

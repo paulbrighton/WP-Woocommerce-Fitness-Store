@@ -5,6 +5,7 @@ import 'slick-carousel'
 import './components/aos'
 import './components/accordion'
 import './components/slider'
+import './components/search-form'
 // import webpackStream from 'webpack-stream'
 
 $(document).ready(() => {
@@ -21,4 +22,12 @@ $(document).ready(() => {
       }
     })
   }
+})
+
+$(function ($) {
+  var siteNavigation = $('.navigation-main')
+  
+  siteNavigation.find('a').on('focus blur', function () {
+    $(this).parents('li').toggleClass('focus')
+  })
 })

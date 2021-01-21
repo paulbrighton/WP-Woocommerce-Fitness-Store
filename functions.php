@@ -32,3 +32,14 @@ if (!function_exists('loop_columns')) {
 		return 3; // 3 products per row
 	}
 }
+
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
+
+
+add_filter('wpseo_breadcrumb_single_link', 'filter_breadcrumbs_for_h1', 10, 2);
+function filter_breadcrumbs_for_h1($link_output, $link) {
+	$link_output = preg_replace("/<span\s(.+?)>(.+?)<\/span>/is", "<h1 $1>$2</h1>", $link_output);
+	return $link_output;
+}

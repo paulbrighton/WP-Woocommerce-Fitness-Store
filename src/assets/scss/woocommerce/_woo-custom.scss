@@ -3,17 +3,23 @@ ul.products {
   margin: 0;
   padding: 0;
   color: $brand;
+  display: flex;
+  flex-wrap: wrap;
 
   li.product {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 
     .woocommerce-loop-product__link {
       display: block;
       text-decoration: none;
+      flex: 1 1 auto;
     }
 
     .woocommerce-loop-product__title {
-      margin: 0.5rem 0 0.5rem;
+      margin: 0.5rem 0 0;
       font-size: 1.5rem;
       font-weight: 400;
       text-align: center !important;
@@ -21,6 +27,10 @@ ul.products {
       &::before {
         content: none;
       }
+    }
+
+    .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+      flex: 1 1 auto;
     }
 
     .woocommerce-loop-product__title,
@@ -34,8 +44,9 @@ ul.products {
     }
 
     .price {
-      margin-bottom: 1rem;
+      // margin-top: 5px;
       text-align: center !important;
+      flex: 1 1 auto;
     }
 
     .price,
@@ -55,6 +66,7 @@ ul.products {
       width: 100%;
       text-align: center !important;
       border: 1px solid $brand-lighter;
+      margin-top: auto;
 
       &.loading {
         opacity: 0.5;
@@ -69,5 +81,47 @@ ul.products {
     .added_to_cart {
       margin: 0.5rem;
     }
+  }
+}
+// .product_item a.product_item_link {
+//   min-height: 90px;
+// }
+// .archive .product_item a.product_item_link img {
+//   max-height: 150px;
+// }
+
+.woocommerce ul.products li.product li.title a {
+  line-height: 2.5ex;
+  height: 5ex;
+  overflow: hidden;
+}
+
+
+
+.woocommerce a.added_to_cart {
+  padding-top: 0;
+  padding: 5px 10px;
+  color: $brand-orange;
+  @include font-bold;
+}
+
+ul.products li.product .added_to_cart {
+  width: 50%;
+  margin: 10px auto 0;
+  border: 1px solid $brand-orange;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+.woocommerce ul.products li.product .price {
+  color: $black;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  a {
+    color: $brand;
   }
 }
