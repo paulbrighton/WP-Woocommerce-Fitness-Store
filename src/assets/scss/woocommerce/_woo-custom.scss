@@ -121,7 +121,13 @@ ul.products li.product .added_to_cart {
   color: $black;
 }
 
+.woocommerce div.product div.images .flex-control-thumbs li {
+  opacity: 1;
+  padding-right: 5px;
+}
+
 .woocommerce .woocommerce-breadcrumb {
+  margin-top: 5px;
   a {
     color: $brand;
   }

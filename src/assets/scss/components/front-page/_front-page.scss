@@ -1,3 +1,30 @@
+.c-front-page {
+  &__welcome {
+    background: $black;
+    color: $white;
+    &-text {
+      padding: 70px 25px;
+      font-size: 1.25rem;
+      text-align: center;
+     
+      @include break-at(small) {
+        padding: 70px 75px;
+      }
+      @include break-at(medium) {
+        padding: 70px 120px;
+      }
+      @include break-at(large) {
+        padding: 70px 150px;
+      }
+  
+      p {
+        margin: 0;
+        hyphens:manual;
+      }
+    }
+  }
+}
+
 // .c-front-page {
 //   h1,
 //   h2,
@@ -201,42 +228,42 @@
 //       margin-bottom: rem-calc(25);
 //       font-size: rem-calc(25);
 //     }
-  
+
 //     &-info {
 //       padding: 3.125rem 0;
-  
+
 //       &__container {
 //         padding: 0 rem-calc(30);
 //       }
-  
+
 //       &__social {
 //         &-icons {
 //           display: flex;
 //           justify-content: center;
 //           flex-wrap: wrap;
 //         }
-  
+
 //         &-logo {
 //           width: 50px;
 //           height: auto;
 //         }
 //       }
-  
+
 //       &__logo {
 //         justify-content: center;
 //         margin: 70px 10px;
-  
+
 //         img {
 //           width: 100px;
 //           height: 100px;
 //         }
 //       }
-  
+
 //       &__contact {
 //         &-text {
 //           width: 100%;
 //         }
-  
+
 //         p {
 //           color: $white;
 //           &:nth-last-child(1) {

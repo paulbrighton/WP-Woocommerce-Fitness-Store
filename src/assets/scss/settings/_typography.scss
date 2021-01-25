@@ -5,7 +5,7 @@ $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace !default
 $font-family-serif: "serif" !default;
 $header-color: inherit !default;
 $header-lineheight: 1.2 !default;
-$header-margin-bottom: 1.875rem !default;
+$header-margin-bottom: 1.5rem !default;
 $small-font-size: 80% !default;
 
 $header-small-font-color: #333333 !default;
@@ -58,7 +58,7 @@ $header-styles: (
       "font-size": 44,
     ),
     "h2": (
-      "font-size": 40,
+      "font-size": 38,
     ),
     "h3": (
       "font-size": 32,
@@ -92,6 +92,16 @@ $header-styles: (
   src: local(''),
        url('../fonts/inter-v2-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/inter-v2-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/inter-v2-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v2-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @mixin font-body() {

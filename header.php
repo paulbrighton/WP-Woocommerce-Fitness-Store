@@ -73,5 +73,16 @@
   <div class="o-container c-header-search-form">
     <?php get_template_part('searchform') ?>
   </div>
+  <div class="c-header__info">
+    <div class="o-container c-header__info-content">
+      <div class="o-row u-justify-spaced">
+        <p>Free delivery when you spend over £30</p>
+        <p>|</p>
+        <p>Free returns</p>
+        <p>|</p>
+        <p>Big discounts on high street brands</p>
+      </div>
+    </div>
+  </div>
 
   <main id="content" role="main">

@@ -4,16 +4,12 @@ $gutter: 20;
 .o-container {
   max-width: rem-calc($global-width);
   margin: 0 auto;
-  // margin-left: auto;
-  // margin-right: auto;
-  // padding-left: rem-calc($gutter/2);
-  // padding-right: rem-calc($gutter/2);
+  padding-left: rem-calc($gutter/2);
+  padding-right: rem-calc($gutter/2);
 }
 
 .o-row {
   display: flex;
-  // margin-right: 10px;
-  // margin-left: 10px;
   flex-wrap: wrap;
   &__col {
     width: calc(100% - #{rem-calc($gutter)});
@@ -60,6 +56,7 @@ $gutter: 20;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
 }

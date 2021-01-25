@@ -1,0 +1,47 @@
+.c-single-product {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__img {
+    padding: 0;
+    @include break-at('small') {
+      padding: 0;
+    }
+    @include break-at('medium') {
+      padding: 0;
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__price {
+    @include font-bold;
+  }
+
+&__btn {
+  text-align: center;
+  margin-top: 6px;
+  @include break-at ('small') {
+    text-align: left;
+  }
+}
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    @include break-at('small') {
+      padding: 0 0 0 50px;
+    }
+    justify-content: center;
+    @media (max-width: 767px) {
+    }
+  }
+}

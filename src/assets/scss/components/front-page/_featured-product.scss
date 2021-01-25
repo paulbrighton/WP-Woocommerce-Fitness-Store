@@ -1,0 +1,14 @@
+.c-featured-products {
+  padding: 50px 10px;
+
+  .woocommerce ul.products[class*="columns-"] li.product,
+  .woocommerce-page ul.products[class*="columns-"] li.product {
+    @media (max-width: 767px) {
+      width: 48%;
+      float: left;
+      clear: both;
+      margin: 0 0 2.992em;
+      padding: 0 10px;
+    }
+  }
+}
