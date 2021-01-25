@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<!-- <div class="c-hero">
-  <div style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php the_field('hero_image'); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero__image">
+<div class="c-hero">
+  <div style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('hero_image'); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero__image">
     <div class="c-hero__text">
       <h1>Karma</h1>
       <h2>Fitness &amp; Yoga</h2>
@@ -8,13 +8,13 @@
       <a class="c-button" href="">Start Shopping</a>
     </div>
   </div>
-</div> -->
+</div>
 
-  <!-- <div class="c-front-page__welcome">
+  <div class="c-front-page__welcome">
     <div class="o-container c-front-page__welcome-text">
       <p data-aos="slide-up">We design durable yoga and fitness apparel with a conscience - 100% made in the United Kingdom. Products by Karma Fitness plus all your favorite brands.</p>
     </div>
-  </div> -->
+  </div>
 
   <!-- <div class="o-container c-featured-products">
     <h2>Shop Bags</h2>

@@ -75,12 +75,16 @@
   </div>
   <div class="c-header__info">
     <div class="o-container c-header__info-content">
-      <div class="o-row u-justify-spaced">
-        <p>Free delivery when you spend over £30</p>
-        <p>|</p>
-        <p>Free returns</p>
-        <p>|</p>
-        <p>Big discounts on high street brands</p>
+      <div class="o-row">
+        <div class="c-header__info-text o-row__col o-row__col--span-12 o-row__col--span-4@small">
+          <p>Free delivery when you spend over £30</p>
+        </div>
+        <div class="c-header__info-text o-row__col o-row__col--span-12 o-row__col--span-4@small">
+          <p>Free returns</p>
+        </div>
+        <div class="c-header__info-text o-row__col o-row__col--span-12 o-row__col--span-4@small">
+          <p>Big discounts on high street brands</p>
+        </div>
       </div>
     </div>
   </div>
