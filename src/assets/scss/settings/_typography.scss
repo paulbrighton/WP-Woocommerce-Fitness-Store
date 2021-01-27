@@ -12,6 +12,23 @@ $header-small-font-color: #333333 !default;
 $paragraph-lineheight: 1.5 !default;
 $paragraph-margin-bottom: 1rem !default;
 
+.c-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  &-with-underline {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 10px 20px;
+      background: linear-gradient(90deg, transparent 35%, $brand 35%, $brand 65%, transparent 65%);
+      background-size: 100% 5px;
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      &--dark {
+        color: $white;
+      }
+  }
+}
+
 $header-styles: (
   xsmall: (
     "h1": (

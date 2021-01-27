@@ -1,5 +1,9 @@
 .c-featured-products {
-  padding: 50px 10px;
+  @include section-padding;
+  &__btn {
+    width: 100%;
+    text-align: center;
+  }
 
   .woocommerce ul.products[class*="columns-"] li.product,
   .woocommerce-page ul.products[class*="columns-"] li.product {

@@ -6,6 +6,10 @@
       padding: 70px 25px;
       font-size: 1.25rem;
       text-align: center;
+      overflow-x: hidden;
+      .welcome-p {
+        margin-top: 16px;
+      }
      
       @include break-at(small) {
         padding: 70px 75px;

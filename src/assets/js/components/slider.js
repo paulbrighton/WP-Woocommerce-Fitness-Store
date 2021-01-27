@@ -37,23 +37,41 @@ $('.c-slider--arrows-outside').slick({
 $('.c-slider--overflow').slick({
   centerMode: true,
   centerPadding: '60px',
-  slidesToShow: 3,
+  slidesToShow: 4,
   autoplay: true,
   autoplaySpeed: 3000,
   arrows: false,
-  dots: true,
+  dots: false,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1200,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '60px',
         slidesToShow: 3
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 960,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 2
+      }
+    },
+    // {
+    //   breakpoint: 768,
+    //   settings: {
+    //     arrows: false,
+    //     centerMode: true,
+    //     centerPadding: '60px',
+    //     slidesToShow: 1
+    //   }
+    // },
+    {
+      breakpoint: 700,
       settings: {
         arrows: false,
         centerMode: true,
