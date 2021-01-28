@@ -2,28 +2,31 @@
   &__welcome {
     background: $black;
     color: $white;
+    overflow-y: unset;
     &-text {
       padding: 70px 25px;
       font-size: 1.25rem;
       text-align: center;
       overflow-x: hidden;
       .welcome-p {
-        margin-top: 16px;
+        padding-top: 16px;
+        span {
+          color: $danger-colour;
+          @include font-bold;
+        }
       }
      
       @include break-at(small) {
         padding: 70px 75px;
       }
-      @include break-at(medium) {
-        padding: 70px 120px;
-      }
+
       @include break-at(large) {
         padding: 70px 150px;
       }
   
       p {
         margin: 0;
-        hyphens:manual;
+        hyphens: manual;
       }
     }
   }

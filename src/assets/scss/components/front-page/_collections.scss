@@ -1,6 +1,7 @@
 .c-front-page__collections {
   @include section-padding;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   &-row {
     flex: 1 1 auto;

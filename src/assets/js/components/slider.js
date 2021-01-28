@@ -81,3 +81,6 @@ $('.c-slider--overflow').slick({
     }
   ]
 })
+  .on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px')
+})

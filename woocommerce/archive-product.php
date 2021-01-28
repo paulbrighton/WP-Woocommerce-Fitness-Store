@@ -39,11 +39,11 @@ get_header('shop');
 <div class="o-container">
 	<div class="o-row">
 		<?php if (is_active_sidebar('primary-sidebar')) { ?>
-			<div class="o-row__col o-row__col--span-12 o-row__col--span-3@small">
+			<div class="o-row__col o-row__col--span-12 o-row__col--span-4@small o-row__col--span-3@medium">
 				<?php get_sidebar() ?>
 			</div>
 		<?php } ?>
-		<div class="o-row__col o-row__col--span-12 o-row__col--span-9@small">
+		<div class="o-row__col o-row__col--span-12 o-row__col--span-8@small o-row__col--span-9@medium">
 			<header class="woocommerce-products-header">
 				<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 					<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>

@@ -1,6 +1,5 @@
 .c-gift-cards {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  @include section-padding;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -36,13 +35,21 @@
   }
 
   &__img {
+    img {
+      border-radius: 5px;
+    }
     &-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      @media (min-width: 767px) {
+
+      @media (max-width: 767px) {
         text-align: center;
         margin-top: 50px;
+      }
+
+      @media (min-width: 1120px) {
+        padding: 50px;
       }
     }
   }

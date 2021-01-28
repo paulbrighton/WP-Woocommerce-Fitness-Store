@@ -21,8 +21,8 @@
 
   <div id="c-front-page__welcome" class="c-front-page__welcome">
     <div class="o-container c-front-page__welcome-text">
-      <p data-aos="slide-left">We design durable yoga and fitness apparel with a conscience - 100% made in the United Kingdom. Products by Karma Fitness plus all your favorite brands.</p>
-      <p class="welcome-p" data-aos="slide-right">NOTE: This is a demo store so the products on sale are not purchasable, sorry.</p>
+      <p>We design durable yoga and fitness apparel with a conscience - 100% made in the United Kingdom. Products by Karma Fitness plus all your favorite brands.</p>
+      <p class="welcome-p"><span>NOTE:</span> This is a demo store so the products on sale are not purchasable, sorry.</p>
     </div>
   </div>
 
@@ -166,198 +166,31 @@
       <h2 class="c-heading-with-underline c-heading-with-underline--dark">What Our Customers Think</h2>
     </div>
     <div class="o-container--full">
-        <div class="slick-overflow c-slider--overflow">
+      <div class="slick-overflow c-slider--overflow">
 
 
 
-          <div class="c-slider--arrows__item">
-            <div class="c-reviews__card">
-              <div class="c-reviews__rating">
-                <?php if (get_field('review_rating_five_star')) : ?>
-                  <img src="<?php the_field('review_rating_five_star'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="c-reviews__body">
-                <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
-              </div>
-              <div class="c-reviews__user-img">
-                <?php
-                $image = get_field('user_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if ($image) {
-                  echo wp_get_attachment_image($image, $size);
-                }
-                ?>
-              </div>
-              <div class="c-reviews__user-name">
-                <h4>Kimi B.</h4>
-              </div>
-              <div class="c-reviews__ussr-location">
-                <p>Leeds, West Yorks</p>
-              </div>
+        <div class="c-slider--arrows__item">
+          <div class="c-reviews__card">
+            <div class="c-reviews__rating">
+              <?php if (get_field('review_rating_five_star')) : ?>
+                <img src="<?php the_field('review_rating_five_star'); ?>" />
+              <?php endif; ?>
             </div>
-          </div>
-
-          <div class="c-slider--arrows__item">
-            <div class="c-reviews__card">
-              <div class="c-reviews__rating">
-                <?php if (get_field('review_rating_five_star')) : ?>
-                  <img src="<?php the_field('review_rating_five_star'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="c-reviews__body">
-                <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
-              </div>
-              <div class="c-reviews__user-img">
-                <?php
-                $image = get_field('user_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if ($image) {
-                  echo wp_get_attachment_image($image, $size);
-                }
-                ?>
-              </div>
-              <div class="c-reviews__user-name">
-                <h4>Kimi B.</h4>
-              </div>
-              <div class="c-reviews__ussr-location">
-                <p>Leeds, West Yorks</p>
-              </div>
+            <div class="c-reviews__body">
+              <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
             </div>
-          </div>
-
-          <div class="c-slider--arrows__item">
-            <div class="c-reviews__card">
-              <div class="c-reviews__rating">
-                <?php if (get_field('review_rating_five_star')) : ?>
-                  <img src="<?php the_field('review_rating_five_star'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="c-reviews__body">
-                <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
-              </div>
-              <div class="c-reviews__user-img">
-                <?php
-                $image = get_field('user_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if ($image) {
-                  echo wp_get_attachment_image($image, $size);
-                }
-                ?>
-              </div>
-              <div class="c-reviews__user-name">
-                <h4>Kimi B.</h4>
-              </div>
-              <div class="c-reviews__ussr-location">
-                <p>Leeds, West Yorks</p>
-              </div>
+            <div class="c-reviews__user-img">
+              <?php
+              $image = get_field('user_image');
+              $size = 'full'; // (thumbnail, medium, large, full or custom size)
+              if ($image) {
+                echo wp_get_attachment_image($image, $size);
+              }
+              ?>
             </div>
-          </div>
 
-          <div class="c-slider--arrows__item">
-            <div class="c-reviews__card">
-              <div class="c-reviews__rating">
-                <?php if (get_field('review_rating_five_star')) : ?>
-                  <img src="<?php the_field('review_rating_five_star'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="c-reviews__body">
-                <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
-              </div>
-              <div class="c-reviews__user-img">
-                <?php
-                $image = get_field('user_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if ($image) {
-                  echo wp_get_attachment_image($image, $size);
-                }
-                ?>
-              </div>
-              <div class="c-reviews__user-name">
-                <h4>Kimi B.</h4>
-              </div>
-              <div class="c-reviews__ussr-location">
-                <p>Leeds, West Yorks</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="c-slider--arrows__item">
-            <div class="c-reviews__card">
-              <div class="c-reviews__rating">
-                <?php if (get_field('review_rating_five_star')) : ?>
-                  <img src="<?php the_field('review_rating_five_star'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="c-reviews__body">
-                <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
-              </div>
-              <div class="c-reviews__user-img">
-                <?php
-                $image = get_field('user_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if ($image) {
-                  echo wp_get_attachment_image($image, $size);
-                }
-                ?>
-              </div>
-              <div class="c-reviews__user-name">
-                <h4>Kimi B.</h4>
-              </div>
-              <div class="c-reviews__ussr-location">
-                <p>Leeds, West Yorks</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="c-slider--arrows__item">
-            <div class="c-reviews__card">
-              <div class="c-reviews__rating">
-                <?php if (get_field('review_rating_five_star')) : ?>
-                  <img src="<?php the_field('review_rating_five_star'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="c-reviews__body">
-                <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
-              </div>
-              <div class="c-reviews__user-img">
-                <?php
-                $image = get_field('user_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if ($image) {
-                  echo wp_get_attachment_image($image, $size);
-                }
-                ?>
-              </div>
-              <div class="c-reviews__user-name">
-                <h4>Kimi B.</h4>
-              </div>
-              <div class="c-reviews__ussr-location">
-                <p>Leeds, West Yorks</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="c-slider--arrows__item">
-            
-            <div class="c-reviews__card">
-              <div class="c-reviews__rating">
-                <?php if (get_field('review_rating_five_star')) : ?>
-                  <img src="<?php the_field('review_rating_five_star'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="c-reviews__body">
-                <p>Fabulous fabrics, great fit and really comfortable while doing my yoga workout!</p>
-              </div>
-              <div class="c-reviews__user-img">
-                <?php
-                $image = get_field('user_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if ($image) {
-                  echo wp_get_attachment_image($image, $size);
-                }
-                ?>
-              </div>
+            <div class="c-reviews__user-details">
               <div class="c-reviews__user-name">
                 <h4>Kimi B.</h4>
               </div>
@@ -367,6 +200,161 @@
             </div>
           </div>
         </div>
+
+        <div class="c-slider--arrows__item">
+          <div class="c-reviews__card">
+            <div class="c-reviews__rating">
+              <?php if (get_field('review_rating_five_star')) : ?>
+                <img src="<?php the_field('review_rating_five_star'); ?>" />
+              <?php endif; ?>
+            </div>
+            <div class="c-reviews__body">
+              <p>Couldn’t be happier with the service I recieved from Karma Fitness.</p>
+            </div>
+            <div class="c-reviews__user-img">
+              <?php
+              $image = get_field('user_image_2');
+              $size = 'full'; // (thumbnail, medium, large, full or custom size)
+              if ($image) {
+                echo wp_get_attachment_image($image, $size);
+              }
+              ?>
+            </div>
+
+            <div class="c-reviews__user-details">
+              <div class="c-reviews__user-name">
+                <h4>Thais B.</h4>
+              </div>
+              <div class="c-reviews__ussr-location">
+                <p>Wakefield, South Yorks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-slider--arrows__item">
+          <div class="c-reviews__card">
+            <div class="c-reviews__rating">
+              <?php if (get_field('review_rating_five_star')) : ?>
+                <img src="<?php the_field('review_rating_five_star'); ?>" />
+              <?php endif; ?>
+            </div>
+            <div class="c-reviews__body">
+              <p>Superb service, items arrived quickly and love the fit of the dress!</p>
+            </div>
+            <div class="c-reviews__user-img">
+              <?php
+              $image = get_field('user_image_3');
+              $size = 'full'; // (thumbnail, medium, large, full or custom size)
+              if ($image) {
+                echo wp_get_attachment_image($image, $size);
+              }
+              ?>
+            </div>
+            <div class="c-reviews__user-details">
+              <div class="c-reviews__user-name">
+                <h4>Tati S.</h4>
+              </div>
+              <div class="c-reviews__ussr-location">
+                <p>Salvador, Bahia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-slider--arrows__item">
+          <div class="c-reviews__card">
+            <div class="c-reviews__rating">
+              <?php if (get_field('review_rating_five_star')) : ?>
+                <img src="<?php the_field('review_rating_five_star'); ?>" />
+              <?php endif; ?>
+            </div>
+            <div class="c-reviews__body">
+              <p>I will definately be using this company again, five stars!</p>
+            </div>
+            <div class="c-reviews__user-img">
+              <?php
+              $image = get_field('user_image_4');
+              $size = 'full'; // (thumbnail, medium, large, full or custom size)
+              if ($image) {
+                echo wp_get_attachment_image($image, $size);
+              }
+              ?>
+            </div>
+
+            <div class="c-reviews__user-details">
+              <div class="c-reviews__user-name">
+                <h4>Walter J.</h4>
+              </div>
+              <div class="c-reviews__ussr-location">
+                <p>Sheffield, South Yorks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-slider--arrows__item">
+          <div class="c-reviews__card">
+            <div class="c-reviews__rating">
+              <?php if (get_field('review_rating_five_star')) : ?>
+                <img src="<?php the_field('review_rating_five_star'); ?>" />
+              <?php endif; ?>
+            </div>
+            <div class="c-reviews__body">
+              <p>I will be shopping more here as soon as it's payday. Great experience.</p>
+            </div>
+            <div class="c-reviews__user-img">
+              <?php
+              $image = get_field('user_image_5');
+              $size = 'full'; // (thumbnail, medium, large, full or custom size)
+              if ($image) {
+                echo wp_get_attachment_image($image, $size);
+              }
+              ?>
+            </div>
+
+            <div class="c-reviews__user-details">
+              <div class="c-reviews__user-name">
+                <h4>Billy K.</h4>
+              </div>
+              <div class="c-reviews__ussr-location">
+                <p>Madrid, Spain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-slider--arrows__item">
+          <div class="c-reviews__card">
+            <div class="c-reviews__rating">
+              <?php if (get_field('review_rating_five_star')) : ?>
+                <img src="<?php the_field('review_rating_five_star'); ?>" />
+              <?php endif; ?>
+            </div>
+            <div class="c-reviews__body">
+              <p>Well done Karma! Thanks for a great shopping experience!!!</p>
+            </div>
+            <div class="c-reviews__user-img">
+              <?php
+              $image = get_field('user_image_6');
+              $size = 'full'; // (thumbnail, medium, large, full or custom size)
+              if ($image) {
+                echo wp_get_attachment_image($image, $size);
+              }
+              ?>
+            </div>
+
+            <div class="c-reviews__user-details">
+              <div class="c-reviews__user-name">
+                <h4>Mika B.</h4>
+              </div>
+              <div class="c-reviews__ussr-location">
+                <p>Bradford, West Yorks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -6,6 +6,7 @@ import './components/aos'
 import './components/accordion'
 import './components/slider'
 import './components/search-form'
+import './components/scroll'
 import 'jquery-confirm'
 // import webpackStream from 'webpack-stream'
 
@@ -51,6 +52,3 @@ $(function ($) {
 //     })
 //   }
 // })
-
-var h = window.innerHeight;
-console.log(h)
