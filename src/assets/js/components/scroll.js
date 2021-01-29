@@ -3,8 +3,8 @@ import $ from 'jquery'
 // Scrolls to div with an id
 const speed = 100
 
-$('a[href*="#"]')
-  .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith('#'))
+$('#c-front-page__welcome')
+  .filter((i, a) => a.getAttribute('href').startsWith('#c-front-page__welcome') || a.href.startsWith('#c-front-page__welcome'))
   .unbind('click.smoothScroll')
   .bind('click.smoothScroll', event => {
     const targetId = event.currentTarget.getAttribute('href').split('#')[1]
@@ -15,4 +15,3 @@ $('a[href*="#"]')
       $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed)
     }
   })
-  
