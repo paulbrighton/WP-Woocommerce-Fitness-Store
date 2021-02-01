@@ -84,8 +84,8 @@ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
 
 // WooCommerce
 @import "./woocommerce/ywcca_style";
-@import "./woocommerce/woo-custom";
 @import "./woocommerce/woocommerce";
+@import "./woocommerce/select2";
 
 @import "../../../node_modules/jquery-confirm/css/jquery-confirm.css";
 
@@ -124,6 +124,7 @@ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      margin-top: 50px;
   }
   .woocommerce.single-product div.product div {
       flex: 1 0 48%;
@@ -132,4 +133,17 @@ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
   .woocommerce.single-product div.product .entry-summary {
       flex: 1 0 48%;
   }
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+  z-index: 0;
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: $brand transparent transparent transparent !important;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent $brand transparent!important;
 }

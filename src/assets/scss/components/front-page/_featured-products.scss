@@ -8,7 +8,7 @@
   .woocommerce ul.products[class*="columns-"] li.product,
   .woocommerce-page ul.products[class*="columns-"] li.product {
     @media (max-width: 767px) {
-      width: 48%;
+      width: 50%;
       float: left;
       clear: both;
       margin: 0 0 2.992em;

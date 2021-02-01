@@ -34,16 +34,14 @@ get_header('shop');
 			<?php do_action('woocommerce_before_main_content'); ?>
 		</div>
 	</div>
-</div>
 
-<div class="o-container">
-	<div class="o-row">
+	<div class="o-row c-product__row">
 		<?php if (is_active_sidebar('primary-sidebar')) { ?>
-			<div class="o-row__col o-row__col--span-12 o-row__col--span-4@small o-row__col--span-3@medium">
+			<div class="o-row__col o-row__col--span-12 o-row__col--span-4@small o-row__col--span-3@large">
 				<?php get_sidebar() ?>
 			</div>
 		<?php } ?>
-		<div class="o-row__col o-row__col--span-12 o-row__col--span-8@small o-row__col--span-9@medium">
+		<div class="o-row__col o-row__col--span-12 o-row__col--span-8@small o-row__col--span-9@large">
 			<header class="woocommerce-products-header">
 				<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 					<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>

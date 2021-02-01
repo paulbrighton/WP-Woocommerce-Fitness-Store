@@ -28,6 +28,7 @@ button, input[type=submit] {
 }
 fieldset {
     border: 2px solid $grey;
+    margin-bottom: 20px;
     legend {
         padding: 0 rem-calc(10px);
         font-weight: bold;
@@ -43,6 +44,7 @@ input[type=email], input[type=number], input[type=password], input[type=search],
     height: 40px;
     border: 1px solid  $grey;
     transition: border-color 0.35s;
+    border-radius: 5px;
 }
 textarea {
     height: auto;
