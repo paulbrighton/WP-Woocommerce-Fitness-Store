@@ -1,4 +1,4 @@
-# Copyright (C) 2020 yummy-pixels
+# Copyright (C) 2021 yummy-pixels
 # This file is distributed under the same license as the yummy-pixels package.
 msgid ""
 msgstr ""
@@ -22,6 +22,10 @@ msgstr[1] ""
 
 #: comments.php:38
 msgid "Comments are closed for this post."
+msgstr ""
+
+#: page-my-account.php:3
+msgid "Account Page"
 msgstr ""
 
 #: searchform.php:3
@@ -508,10 +512,14 @@ msgid "Primary Menu"
 msgstr ""
 
 #: lib/navigation.php:6
+msgid "Component Menu"
+msgstr ""
+
+#: lib/navigation.php:7
 msgid "Footer Menu"
 msgstr ""
 
-#: template-parts/post/content-none.php:5
+#: template-parts/post/content-none.php:6
 msgid "Whoops, something went wrong. Why not try searching for some interesting content."
 msgstr ""
 

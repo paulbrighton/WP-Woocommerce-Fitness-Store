@@ -3,13 +3,21 @@
   align-items: center;
   font-size: rem-calc(20);
   height: 50px;
-  width: 100%;
+  width: 400px;
   padding: 0;
   margin: 0;
+  @media (max-width: 600px) {
+    width: 275px;
+  }
 
   .search-field {
     border-right: 0;
     outline: none;
+    font-size: rem-calc(16);
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
   .search-submit {

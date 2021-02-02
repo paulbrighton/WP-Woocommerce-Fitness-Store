@@ -6,7 +6,7 @@
         <h1>Karma</h1>
         <h2>Fitness &amp; Yoga</h2>
         <p>A collection of clothing and accessories for all your yoga and fitness needs.</p>
-        <a class="c-button" href="">Start Shopping</a>
+        <a class="c-button" href="<?php echo get_permalink( get_page_by_title( 'shop' ) ) ?>">Start Shopping</a>
       </div>
       <div class="c-hero__scroll">
         <a href="#c-front-page__welcome" class="c-hero__scroll-btn">Scroll</a>

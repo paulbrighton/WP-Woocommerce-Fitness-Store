@@ -59,10 +59,6 @@
 }
 
 .woocommerce .woocommerce-breadcrumb {
-  
-}
-
-.woocommerce .woocommerce-breadcrumb {
   padding: 5px 0 0;
   a {
     color: $brand;
@@ -77,6 +73,10 @@
     color: $brand;
     margin-bottom: 25px;
     font-size: rem-calc(32);
+  }
+
+  &--account {
+    margin-bottom: 50px;
   }
 }
 
@@ -100,20 +100,22 @@
 .woocommerce-products-header {
   h1 {
     color: $brand;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-size: rem-calc(36);
     @media (max-width: 767px) {
       text-align: center;
       margin-top: 25px;
+      margin-bottom: 0;
     }
   }
 }
 
 .category-list-dropdown-container {
-  margin: 20px 0 20px;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
   @media (max-width: 767px) {
+    margin: 20px 0 20px;
+    display: flex;
+    justify-content: flex-end;
     justify-content: center;
     margin: 50px 0 25px;
   }
@@ -128,6 +130,7 @@
 
 .woocommerce .woocommerce-result-count {
   margin: 0 0 50px;
+  @include font-bold;
 }
 
 .woocommerce-ordering {
@@ -421,6 +424,14 @@ ul.products li.product .added_to_cart {
   }
 }
 
+@media (min-width: 600px) and (max-width: 767px) {
+  .woocommerce ul.products[class*="columns-"] li.product {
+    padding: 0 50px;
+    width: 100%;
+    margin: 0 0 40px;
+  }
+}
+
 @media (max-width: 767px) {
   .woocommerce ul.products[class*="columns-"] li.product {
     width: 100%;
@@ -568,4 +579,21 @@ mark {
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {
   color: $brand;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+  ul {
+    list-style-type: none !important;
+    li {
+      @include font-bold;
+    }
+  }
+}
+
+@include break-at('medium') {
+  .woocommerce div.product .woocommerce-tabs .panel p {
+    margin: 0 0 2em;
+    padding: 0;
+    max-width: 50%;
+}
 }
