@@ -1,23 +1,45 @@
 .navigation.pagination .nav-links {
   margin-top: rem-calc(40);
   text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e2e2e2;
   span:not(.dots):not(.current),
   a {
-    padding: rem-calc(7 15);
+    padding: rem-calc(8 12);
     border-bottom: none;
     background-color: #e0e0e0;
-    color: $dark-grey;
+    color: $brand;
     display: inline-block;
-    background-color: #fafafa;
-    border: 2px solid #e2e2e2;
+    background-color: $white;
+    border-right: 1px solid #e2e2e2;
   }
   a:hover {
-    background-color: $primary-colour;
+    background-color: $brand;
     color: #fff;
   }
   .dots,
   .current {
-    padding: rem-calc(7 7);
+    padding: rem-calc(8 12);
+    background-color: $brand;
+    color: $white;
+    border-right: 1px solid #e2e2e2;
+  }
+  .current {
+    padding: rem-calc(8 12);
+    background-color: #ebe9eb;
+    color: $dark-grey;
+    border-right: 1px solid #e2e2e2;
+  }
+  .dots {
+    padding: rem-calc(7 15);
+    background-color: transparent;
+    color: $dark-grey;
+    border-right: 1px solid #e2e2e2;
+  }
+  .next {
+    border-right: 0;
   }
 }
 

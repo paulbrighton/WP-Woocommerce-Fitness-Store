@@ -28,6 +28,14 @@ msgstr ""
 msgid "Account Page"
 msgstr ""
 
+#: search.php:72
+msgid "←"
+msgstr ""
+
+#: search.php:73
+msgid "→"
+msgstr ""
+
 #: searchform.php:3
 msgctxt "placeholder"
 msgid "Search …"
@@ -520,7 +528,7 @@ msgid "Footer Menu"
 msgstr ""
 
 #: template-parts/post/content-none.php:6
-msgid "Whoops, something went wrong. Why not try searching for some interesting content."
+msgid "Whoops, something went wrong. Why not try searching for some products."
 msgstr ""
 
 #. translators: , is used between categories

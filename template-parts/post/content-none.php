@@ -3,8 +3,9 @@
     <div class="o-row__col o-row__col--span-12">
       <main role="main">
         <div class="content-none-search">
-          <p><?php echo apply_filters('_themename_no_posts_text', esc_html__('Whoops, something went wrong. Why not try searching for some interesting content.', '_themename')) ?></p>
+          <p><?php echo apply_filters('_themename_no_posts_text', esc_html__('Whoops, something went wrong. Why not try searching for some products.', '_themename')) ?></p>
           <?php get_search_form( true ); ?>
+          <p>Or go to <a href="<?php echo get_home_url(); ?>">home page.</a></p>
         </div>
       </main>
     </div>

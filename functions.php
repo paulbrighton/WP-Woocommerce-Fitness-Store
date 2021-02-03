@@ -88,3 +88,23 @@ function custom_woocommerce_gallery_thumbnail_size()
 {
 	return 'thumbnail';
 }
+
+add_filter( 'woocommerce_product_tabs', 'wp_woo_rename_reviews_tab', 98);
+function wp_woo_rename_reviews_tab($tabs) {
+    global $product;
+    $check_product_review_count = $product->get_review_count();
+    if ( $check_product_review_count == 0 ) {
+        $tabs['reviews']['title'] = 'Reviews';
+    } else {
+        $tabs['reviews']['title'] = 'Reviews('.$check_product_review_count.')';
+    }
+    return $tabs;
+}
+
+function wpb_change_search_url() {
+	if ( is_search() && ! empty( $_GET['s'] ) ) {
+			wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
+			exit();
+	}   
+}
+add_action( 'template_redirect', 'wpb_change_search_url' );

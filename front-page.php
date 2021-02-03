@@ -133,7 +133,7 @@
       <div data-aos="fade-left" data-aos-duration="1000" class="o-row__col o-row__col--span-12 o-row__col--span-6@small c-single-product__text">
         <?php
         $args = array(
-          'p'              => 2857,
+          'p'              => 2848,
           'post_type'      => 'product'
         );
         $featured_product = new WP_Query($args);

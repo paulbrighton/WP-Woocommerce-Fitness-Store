@@ -37,6 +37,7 @@ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "./components/pagination-links";
 @import "./components/button";
 @import "./components/c-component-nav";
+@import "./components/product-search";
 
 // Header Components
 @import "./components/header";
@@ -153,7 +154,7 @@ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
   flex-direction: column;
   align-items: center;
   p {
-    margin-bottom: 25px;
+    margin: 25px 0;
   }
 }
 
