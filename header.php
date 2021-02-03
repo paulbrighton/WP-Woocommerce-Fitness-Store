@@ -23,7 +23,9 @@
       <div class="c-header__nav o-row__col--span-9 o-row__col o-row__col--span-6@medium">
 
         <div class="c-header__nav--mobile">
+        <?php if (!is_cart() & !is_checkout() & !is_account_page()) { ?>
         <div class="c-header__icon--mobile c-search__btn"><i class="fas fa-search"></i></div>
+        <?php } ?>
         <?php if (is_user_logged_in()) { ?>
           <div class="c-header__icon--mobile c-account__btn"><a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><i class="fas fa-user"></i><a></div>
         <?php } else { ?>
@@ -60,7 +62,9 @@
         </div>
       </div>
       <div class="c-header__icons o-row__col o-row__col--span-0  o-row__col o-row__col--span-3@medium">
+      <?php if (!is_cart() & !is_checkout() & !is_account_page()) { ?>
         <div class="c-header__icon c-search__btn"><i class="fas fa-search"></i></div>
+        <?php } ?>
         <?php if (is_user_logged_in()) { ?>
           <a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>" class="c-header__icon c-account__btn"><i class="fas fa-user"></i><a>
         <?php } else { ?>

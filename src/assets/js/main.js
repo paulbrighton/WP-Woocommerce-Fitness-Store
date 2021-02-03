@@ -42,7 +42,7 @@ $(function ($) {
 })
 
 $(document).ready(function ($) {
-  if ($('body').hasClass('home')) {
+  if ($('body').hasClass('home') | $('body').hasClass('woocommerce-checkout')) {
     if ($(window).width() < 768) {
       $.confirm({
         title: 'WooCommerce Demo Store!',
@@ -59,7 +59,7 @@ $(document).ready(function ($) {
         'This is a WordPress custom theme using the Woocommerce plugin for the store features. Contact Paul at <a href="https://www.paulbrighton.com/">YP Digital</a> if you like what you see and for a quote on your next website.',
         useBootstrap: false,
         boxWidth: '50%',
-        autoClose: 'close|128000'
+        autoClose: 'close|10000'
       })
     }
   }
