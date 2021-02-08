@@ -35,7 +35,7 @@
   .c-site-info {
     width: 100%;
     background-color: $black;
-    padding: rem-calc(5) 0;
+    padding: rem-calc(15) 0;
     color: $light-grey;
     font-size: rem-calc(15);
     font-weight: 300;
@@ -57,7 +57,7 @@
       @media (max-width: 767px) {
         justify-content: center;
         margin-top: 35px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
       }
     }
 
@@ -65,10 +65,43 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 767px) {
+        justify-content: center;
+        margin-bottom: 25px;
+      }
       a {
         margin-left: 5px;
         &:hover {
           color: $white;
+        }
+      }
+    }
+
+    .c-site-info__privacy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 767px) {
+        justify-content: center;
+        margin-bottom: 35px;
+      }
+      
+      .navigation-privacy {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline;
+          &:first-child {
+            margin-right: 20px;
+          }
+
+          a {
+            color: $light-grey;
+            &:hover {
+              color: $brand;
+            }
+          }
         }
       }
     }
@@ -106,12 +139,13 @@
 
 .c-footer__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 0;
+  padding-bottom: 35px;
   @media (max-width: 767px) {
     justify-content: center;
-    padding: 35px 0 35px;
+    padding: 0 0 35px;
   }
   .c-social-icon__wrapper {
     width: 35px;

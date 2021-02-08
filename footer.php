@@ -9,13 +9,27 @@
     <?php } ?>
   </div>
   <div class="c-footer__nav">
-          <?php
-          if (has_nav_menu('footer')) {
-            wp_nav_menu(array(
-              'theme_location' => 'footer'
-            ));
-          }
-          ?>
+    <?php
+    if (has_nav_menu('footer')) {
+      wp_nav_menu(array(
+        'theme_location' => 'footer'
+      ));
+    }
+    ?>
+  </div>
+  <div class="c-footer__social">
+        <div class="c-social-icon__wrapper"> 
+            <a href="/"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="c-social-icon__wrapper">
+            <a href="/"><i class="fab fa-dribbble"></i></a>
+          </div>
+          <div class="c-social-icon__wrapper"> 
+            <a href="/"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="c-social-icon__wrapper"> 
+            <a href="/"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
   <?php get_template_part('template-parts/footer/site-info') ?>
 </footer>

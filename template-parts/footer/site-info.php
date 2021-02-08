@@ -26,21 +26,17 @@ $built_by_info = get_theme_mod('_themename_built_by_info', '');
           echo wp_kses($built_by_info, $allowed)
           ?>
         </div>
-        <div class="o-row__col o-row__col--span-12 o-row__col--span-4@small c-footer__social">
-        <div class="c-social-icon__wrapper"> 
-            <a href="/"><i class="fab fa-instagram"></i></a>
-          </div>
-          <div class="c-social-icon__wrapper">
-            <a href="/"><i class="fab fa-dribbble"></i></a>
-          </div>
-          <div class="c-social-icon__wrapper"> 
-            <a href="/"><i class="fab fa-twitter"></i></a>
-          </div>
-          <div class="c-social-icon__wrapper"> 
-            <a href="/"><i class="fab fa-youtube"></i></a>
-          </div>
+        <div class="o-row__col o-row__col--span-12 o-row__col--span-4@small c-site-info__privacy">
+          <?php
+          if (has_nav_menu('privacy')) {
+            wp_nav_menu(array(
+              'theme_location' => 'privacy',
+              'container'      => '',
+              'menu_class'     => 'navigation-privacy',
+            ));
+          }
+          ?>
         </div>
       </div>
     </div>
-  </div>
-<?php } ?>
+  <?php } ?>

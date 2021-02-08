@@ -5,6 +5,8 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php wp_head(); ?>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#000000"},"button":{"background":"#f9f9f9","text":"#000000"}},"position":"bottom","margin":"none","content":{"href":"http://karma-fitness.yummypixels.co.uk/cookie-policy/"}})});</script>
 </head>
 
 <body <?php body_class(); ?>>

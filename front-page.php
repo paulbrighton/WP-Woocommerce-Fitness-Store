@@ -46,7 +46,7 @@
               }
               ?>
               <div class="c-front-page__collections__collection--title">
-                <p>Womens</p>
+                <p>Women</p>
               </div>
             </a>
           </div>
@@ -97,7 +97,7 @@
             }
             ?>
             <div class="c-front-page__collections__collection--title">
-              <p>Mens</p>
+              <p>Men</p>
             </div>
           </div>
         </a>

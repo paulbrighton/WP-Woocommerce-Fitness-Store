@@ -10,6 +10,7 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 select {
+  -webkit-appearance: auto;
   box-sizing: border-box;
   width: 100%;
   padding: rem-calc(5px 8px);

@@ -28,11 +28,11 @@ msgstr ""
 msgid "Account Page"
 msgstr ""
 
-#: search.php:72
+#: search.php:77
 msgid "←"
 msgstr ""
 
-#: search.php:73
+#: search.php:78
 msgid "→"
 msgstr ""
 
@@ -520,7 +520,7 @@ msgid "Primary Menu"
 msgstr ""
 
 #: lib/navigation.php:6
-msgid "Component Menu"
+msgid "Privacy Menu"
 msgstr ""
 
 #: lib/navigation.php:7

@@ -7,21 +7,21 @@
       </div>
     <?php } ?>
     <div class="o-row__col o-row__col--span-12 o-row__col--span-8@small o-row__col--span-9@large">
-    <header class="woocommerce-products-header">
-    <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
-      <h1 class="woocommerce-products-header__title page-title"><?php echo $wp_query->found_posts; ?> <?php _e('search results for', 'locale'); ?>: <?php echo get_search_query(); ?></h1>
-    <?php endif; ?>
+      <header class="woocommerce-products-header">
+        <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
+          <h1 class="woocommerce-products-header__title page-title"><?php echo $wp_query->found_posts; ?> <?php _e('search results for', 'locale'); ?>: <?php echo get_search_query(); ?></h1>
+        <?php endif; ?>
 
-    <?php
-    /**
-     * Hook: woocommerce_archive_description.
-     *
-     * @hooked woocommerce_taxonomy_archive_description - 10
-     * @hooked woocommerce_product_archive_description - 10
-     */
-    do_action('woocommerce_archive_description');
-    ?>
-  </header>
+        <?php
+        /**
+         * Hook: woocommerce_archive_description.
+         *
+         * @hooked woocommerce_taxonomy_archive_description - 10
+         * @hooked woocommerce_product_archive_description - 10
+         */
+        do_action('woocommerce_archive_description');
+        ?>
+      </header>
       <div class="o-row c-product-search__row">
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
@@ -73,21 +73,12 @@
         <?php endif; ?>
       </div>
       <div class="c-product-search__pagination">
-    <?php the_posts_pagination(array(
-      'prev_text' => __('←', '_themename'),
-      'next_text' => __('→', '_themename'),
-    ));; ?>
-  </div>
+        <?php the_posts_pagination(array(
+          'prev_text' => __('←', '_themename'),
+          'next_text' => __('→', '_themename'),
+        ));; ?>
+      </div>
     </div>
   </div>
-
-
-
-  <!-- <div class="c-product-search__pagination">
-    <?php the_posts_pagination(array(
-      'prev_text' => __('←', '_themename'),
-      'next_text' => __('→', '_themename'),
-    ));; ?>
-  </div> -->
 </div>
 <?php get_footer(); ?>
