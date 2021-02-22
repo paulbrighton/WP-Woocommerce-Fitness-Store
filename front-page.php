@@ -365,10 +365,10 @@
     </div>
     <?php echo do_shortcode('[products limit="4" columns="4" category="bags-and-backpacks" cat_operator="AND"]') ?>
     <div class="c-featured-products__btn">
-      <a class="c-button c-button--featured-products" href="">View all Bags</a>
+      <a class="c-button c-button--featured-products" href="<?php echo get_term_link(149, 'product_cat') ?>">View all Bags</a>
     </div>
   </div>
-
+  
   <div class="c-hero-with-text">
     <img class="c-hero-with-text__img" <?php awesome_acf_responsive_image(get_field('hero_text_overlay_image'), 'thumb-640', '1440px'); ?> alt="text" />
     <div class="c-hero-with-text__overlay">
